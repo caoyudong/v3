@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-
+#import "Cycling.h"
 @interface TestCycling : XCTestCase
-
+-(void)test_play;
 @end
 
 @implementation TestCycling
@@ -36,5 +36,14 @@
         // Put the code you want to measure the time of here.
     }];
 }
+
+- (void)test_play{
+    Cycling *cycling=[[Cycling alloc]init];
+    NSMutableArray *give=[[NSMutableArray alloc]initWithObjects:@"0",@"1", nil];
+    int flag=[cycling enoughTimes:give :6];
+    XCTAssertEqual(flag, 6);
+    
+}
+
 
 @end

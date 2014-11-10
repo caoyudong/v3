@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-
-@interface JudgeTest : XCTestCase
-
+#import "Judge.h"
+@interface TestJudge : XCTestCase
+-(void)test_judge;
 @end
 
-@implementation JudgeTest
+@implementation TestJudge
 
 - (void)setUp {
     [super setUp];
@@ -36,5 +36,12 @@
         // Put the code you want to measure the time of here.
     }];
 }
-
+- (void)test_judge{
+    NSMutableArray *ceshi=[[NSMutableArray alloc]initWithObjects:@"1",@"3",@"8",@"6",nil];
+    Judge *judge=[[Judge alloc]init];
+    NSMutableArray *result=[judge panduan:ceshi];
+    NSMutableArray *example=[[NSMutableArray alloc]initWithObjects:@"2",@"2", nil];
+    NSLog(@"%@--－!!－－－!!!－－－!!－－－",result);
+    XCTAssertEqualObjects(result,example);
+}
 @end

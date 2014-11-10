@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface Judge : NSObject
-
+-(NSMutableArray *)panduan :(NSMutableArray *)nsarray;
 @end

@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
-
-
+#import "AppDelegate.h"
+@interface IndexController : UIViewController <UITextFieldDelegate>{
+    UILabel *m_labelInfo;
+    UITextField *m_textfiledInput;
+    
+}
+@property NSMutableArray *randomtrueArray;
 @end
 

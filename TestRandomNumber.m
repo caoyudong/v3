@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "RandomNumber.h"
 
 @interface TestRandomNumber : XCTestCase
 
+- (void) test_add_A_B;
 @end
 
 @implementation TestRandomNumber
@@ -36,5 +38,13 @@
         // Put the code you want to measure the time of here.
     }];
 }
-
+- (void) test_add_A_B
+{
+    RandomNumber *random_number = [[RandomNumber alloc]init];
+    int c = [random_number add_A_B:1 :2];
+    NSLog(@"%d!!!!!!!____!!!!",c);
+    XCTAssertEqual(c, 3);
+//    BOOL flag = true;
+//    XCTAssertTrue(flag);
+}
 @end

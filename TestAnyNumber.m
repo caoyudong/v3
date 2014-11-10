@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "AnyNumber.h"
 
 @interface TestAnyNumber : XCTestCase
-
+//-(void)show;
+- (void)test_any_number;
 @end
 
 @implementation TestAnyNumber
@@ -37,4 +39,20 @@
     }];
 }
 
+- (void)test_any_number{
+    AnyNumber *anynumber=[[AnyNumber alloc]init];
+    BOOL flag=true;
+    NSMutableArray *numbers=[NSMutableArray arrayWithCapacity:0];
+    numbers=[anynumber show];
+    for (int i=0; i<numbers.count-1; i++) {
+        for (int j=i+1; j<numbers.count; j++) {
+            if ([numbers[i] isEqualToString: numbers[j]]) {
+                flag=false;
+            }
+        }
+    }
+    NSLog(@"%@------$$$$$$_@@&&#@$$",numbers);
+    XCTAssertTrue(flag);
+    
+}
 @end

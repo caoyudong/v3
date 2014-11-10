@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "AnyNumber.h"
 @interface Cycling : NSObject
-
+-(int)enoughTimes :(NSMutableArray *)resultab :(int)chance;
 @end

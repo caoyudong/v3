@@ -9,11 +9,19 @@
 /* Begin PBXBuildFile section */
 		0D9746991A09F85E0006C79F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9746981A09F85E0006C79F /* main.m */; };
 		0D97469C1A09F85E0006C79F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D97469B1A09F85E0006C79F /* AppDelegate.m */; };
-		0D97469F1A09F85E0006C79F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D97469E1A09F85E0006C79F /* ViewController.m */; };
+		0D97469F1A09F85E0006C79F /* IndexController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D97469E1A09F85E0006C79F /* IndexController.m */; };
 		0D9746A21A09F85E0006C79F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D9746A01A09F85E0006C79F /* Main.storyboard */; };
 		0D9746A41A09F85E0006C79F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D9746A31A09F85E0006C79F /* Images.xcassets */; };
 		0D9746A71A09F85E0006C79F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D9746A51A09F85E0006C79F /* LaunchScreen.xib */; };
 		0D9746B31A09F85F0006C79F /* GuessNumberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9746B21A09F85F0006C79F /* GuessNumberTests.m */; };
+		0D9746C11A09FB0E0006C79F /* TestRandomNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9746C01A09FB0E0006C79F /* TestRandomNumber.m */; };
+		0D9746C41A09FBE60006C79F /* RandomNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9746C31A09FBE60006C79F /* RandomNumber.m */; };
+		0D9746C71A0A00350006C79F /* AnyNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9746C61A0A00350006C79F /* AnyNumber.m */; };
+		0D9746C91A0A0DCD0006C79F /* TestAnyNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9746C81A0A0DCD0006C79F /* TestAnyNumber.m */; };
+		0D9746CC1A0A196B0006C79F /* Judge.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9746CB1A0A196B0006C79F /* Judge.m */; };
+		0D9770481A0B16B800278A0B /* TestJudge.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9770471A0B16B800278A0B /* TestJudge.m */; };
+		0D97C39F1A0C6D05007DB92A /* Cycling.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D97C39E1A0C6D05007DB92A /* Cycling.m */; };
+		0D97C3A11A0C8D84007DB92A /* TestCycling.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D97C3A01A0C8D84007DB92A /* TestCycling.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +40,26 @@
 		0D9746981A09F85E0006C79F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0D97469A1A09F85E0006C79F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0D97469B1A09F85E0006C79F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0D97469D1A09F85E0006C79F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0D97469E1A09F85E0006C79F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0D97469D1A09F85E0006C79F /* IndexController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexController.h; sourceTree = "<group>"; };
+		0D97469E1A09F85E0006C79F /* IndexController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndexController.m; sourceTree = "<group>"; };
 		0D9746A11A09F85E0006C79F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D9746A31A09F85E0006C79F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0D9746A61A09F85E0006C79F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0D9746AC1A09F85E0006C79F /* GuessNumberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuessNumberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D9746B11A09F85F0006C79F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D9746B21A09F85F0006C79F /* GuessNumberTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuessNumberTests.m; sourceTree = "<group>"; };
+		0D9746C01A09FB0E0006C79F /* TestRandomNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRandomNumber.m; sourceTree = "<group>"; };
+		0D9746C21A09FBE60006C79F /* RandomNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RandomNumber.h; path = GuessNumber/RandomNumber.h; sourceTree = "<group>"; };
+		0D9746C31A09FBE60006C79F /* RandomNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RandomNumber.m; path = GuessNumber/RandomNumber.m; sourceTree = "<group>"; };
+		0D9746C51A0A00350006C79F /* AnyNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnyNumber.h; path = GuessNumber/AnyNumber.h; sourceTree = "<group>"; };
+		0D9746C61A0A00350006C79F /* AnyNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnyNumber.m; path = GuessNumber/AnyNumber.m; sourceTree = "<group>"; };
+		0D9746C81A0A0DCD0006C79F /* TestAnyNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAnyNumber.m; sourceTree = "<group>"; };
+		0D9746CA1A0A196B0006C79F /* Judge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Judge.h; path = GuessNumber/Judge.h; sourceTree = "<group>"; };
+		0D9746CB1A0A196B0006C79F /* Judge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Judge.m; path = GuessNumber/Judge.m; sourceTree = "<group>"; };
+		0D9770471A0B16B800278A0B /* TestJudge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestJudge.m; sourceTree = "<group>"; };
+		0D97C39D1A0C6D05007DB92A /* Cycling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cycling.h; path = GuessNumber/Cycling.h; sourceTree = "<group>"; };
+		0D97C39E1A0C6D05007DB92A /* Cycling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cycling.m; path = GuessNumber/Cycling.m; sourceTree = "<group>"; };
+		0D97C3A01A0C8D84007DB92A /* TestCycling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCycling.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +83,11 @@
 		0D97468A1A09F85E0006C79F = {
 			isa = PBXGroup;
 			children = (
+				0D97C3A21A0C98DC007DB92A /* ClassTest */,
+				0D97C3A01A0C8D84007DB92A /* TestCycling.m */,
+				0D9770471A0B16B800278A0B /* TestJudge.m */,
+				0D9746C81A0A0DCD0006C79F /* TestAnyNumber.m */,
+				0D9746C01A09FB0E0006C79F /* TestRandomNumber.m */,
 				0D9746951A09F85E0006C79F /* GuessNumber */,
 				0D9746AF1A09F85F0006C79F /* GuessNumberTests */,
 				0D9746941A09F85E0006C79F /* Products */,
@@ -83,8 +108,8 @@
 			children = (
 				0D97469A1A09F85E0006C79F /* AppDelegate.h */,
 				0D97469B1A09F85E0006C79F /* AppDelegate.m */,
-				0D97469D1A09F85E0006C79F /* ViewController.h */,
-				0D97469E1A09F85E0006C79F /* ViewController.m */,
+				0D97469D1A09F85E0006C79F /* IndexController.h */,
+				0D97469E1A09F85E0006C79F /* IndexController.m */,
 				0D9746A01A09F85E0006C79F /* Main.storyboard */,
 				0D9746A31A09F85E0006C79F /* Images.xcassets */,
 				0D9746A51A09F85E0006C79F /* LaunchScreen.xib */,
@@ -117,6 +142,21 @@
 				0D9746B11A09F85F0006C79F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0D97C3A21A0C98DC007DB92A /* ClassTest */ = {
+			isa = PBXGroup;
+			children = (
+				0D9746C51A0A00350006C79F /* AnyNumber.h */,
+				0D9746C61A0A00350006C79F /* AnyNumber.m */,
+				0D9746CA1A0A196B0006C79F /* Judge.h */,
+				0D9746CB1A0A196B0006C79F /* Judge.m */,
+				0D9746C21A09FBE60006C79F /* RandomNumber.h */,
+				0D9746C31A09FBE60006C79F /* RandomNumber.m */,
+				0D97C39D1A0C6D05007DB92A /* Cycling.h */,
+				0D97C39E1A0C6D05007DB92A /* Cycling.m */,
+			);
+			name = ClassTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +259,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D97469F1A09F85E0006C79F /* ViewController.m in Sources */,
+				0D9746C71A0A00350006C79F /* AnyNumber.m in Sources */,
+				0D97469F1A09F85E0006C79F /* IndexController.m in Sources */,
 				0D97469C1A09F85E0006C79F /* AppDelegate.m in Sources */,
+				0D9746CC1A0A196B0006C79F /* Judge.m in Sources */,
 				0D9746991A09F85E0006C79F /* main.m in Sources */,
+				0D9746C41A09FBE60006C79F /* RandomNumber.m in Sources */,
+				0D97C39F1A0C6D05007DB92A /* Cycling.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D97C3A11A0C8D84007DB92A /* TestCycling.m in Sources */,
 				0D9746B31A09F85F0006C79F /* GuessNumberTests.m in Sources */,
+				0D9770481A0B16B800278A0B /* TestJudge.m in Sources */,
+				0D9746C91A0A0DCD0006C79F /* TestAnyNumber.m in Sources */,
+				0D9746C11A09FB0E0006C79F /* TestRandomNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +393,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				INFOPLIST_FILE = GuessNumber/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +407,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				INFOPLIST_FILE = GuessNumber/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,6 +470,7 @@
 				0D9746B81A09F85F0006C79F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D9746B91A09F85F0006C79F /* Build configuration list for PBXNativeTarget "GuessNumberTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +479,7 @@
 				0D9746BB1A09F85F0006C79F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

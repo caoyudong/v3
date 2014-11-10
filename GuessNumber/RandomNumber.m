@@ -9,5 +9,8 @@
 #import "RandomNumber.h"
 
 @implementation RandomNumber
-
+- (int)add_A_B :(int)aNumber :(int)bNumber
+{
+    return aNumber + bNumber;
+}
 @end
