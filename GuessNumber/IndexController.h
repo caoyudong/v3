@@ -11,6 +11,7 @@
 @interface IndexController : UIViewController <UITextFieldDelegate>{
     UILabel *m_labelInfo;
     UITextField *m_textfiledInput;
+    int flag;
     
 }
 @property NSMutableArray *randomtrueArray;

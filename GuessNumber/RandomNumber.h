@@ -9,5 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface RandomNumber : NSObject
-- (int)add_A_B :(int)aNumber :(int)bNumber;
+{
+    NSMutableArray *randomGenerate;
+}
+
+//-(id)init :(NSMutableArray *)xrandomArray;
+-(NSMutableArray *)creatRandom;
+
 @end

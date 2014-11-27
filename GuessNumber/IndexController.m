@@ -7,105 +7,76 @@
 //
 
 #import "IndexController.h"
-
+#import "RandomNumber.h"
+#import "ResultCheck.h"
+#import "ChanceTimes.h"
 @interface IndexController ()
 
 @end
 
 @implementation IndexController
 @synthesize randomtrueArray;
-int flag=0;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    flag=0;
+    [self random];
     self.view.backgroundColor=[UIColor whiteColor];
-    m_textfiledInput=[self createLabelts:CGRectMake(120, 120, 130, 30) :[UIColor whiteColor]];
+    m_textfiledInput=[self createLabelts:CGRectMake(120, 120, 150, 30) :[UIColor whiteColor]];
+    m_textfiledInput.placeholder=@"输入4位不同数字";
     m_textfiledInput.delegate=self;
     
-    [self setGuessWithTarget:self andSEL:@selector(click:)];
+    [self setGuessWithTarget:self andSEL:@selector(clickGuess:)];
     m_labelInfo=[[UILabel alloc]initWithFrame:CGRectMake(200, 150, 100, 50)];
     [self.view addSubview:m_labelInfo];
-    [self randomTrue];
+    
 }
 
+-(void)random{
+    RandomNumber *random=[[RandomNumber alloc]init];
+    randomtrueArray=[random creatRandom];
+}
 
--(void)click :(id)sender{
-        NSMutableArray *systemnumbers=self.randomtrueArray;
-    NSLog(@"%@",systemnumbers);
-        NSLog(@"%d---^^^-",flag);
-    
+-(void)clickGuess :(id)sender
+{
+    flag++;
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"厉害！" message:@"您猜对了" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
     NSString *textfiledValue=m_textfiledInput.text;
-    int intTextfiledValueFirst=[[textfiledValue substringWithRange:NSMakeRange(0,1)] intValue];
-    int intTextfiledValueSecond=[[textfiledValue substringWithRange:NSMakeRange(1,1)] intValue];
-    int intTextfiledValueThird=[[textfiledValue substringWithRange:NSMakeRange(2,1)] intValue];
-    int intTextfiledValueFourth=[[textfiledValue substringWithRange:NSMakeRange(3,1)] intValue];
+    ResultCheck *resultCheck=[[ResultCheck alloc]init:textfiledValue :self.randomtrueArray];
+    NSString *result=[resultCheck JudgeAandB];
     
-    NSString *strValueFirst=[NSString stringWithFormat:@"%d",intTextfiledValueFirst];
-    NSString *strValueSecond=[NSString stringWithFormat:@"%d",intTextfiledValueSecond];
-    NSString *strValueThird=[NSString stringWithFormat:@"%d",intTextfiledValueThird];
-    NSString *strValueFourth=[NSString stringWithFormat:@"%d",intTextfiledValueFourth];
+    ChanceTimes *chanceTimes=[[ChanceTimes alloc]init];
+    NSString * content=[chanceTimes resultBytimes:result :flag];
+    m_labelInfo.text=result;
     
-    NSLog(@"%@--@@!!!!@@",strValueFirst);
-    NSMutableArray *valueArray=[[NSMutableArray alloc]initWithObjects:strValueFirst,strValueSecond,strValueThird,strValueFourth, nil];
-    
-    NSMutableArray *result=[self judge:valueArray];
-    NSString *resultFirst=result[0];
-    if ([resultFirst isEqualToString:@"4"]){
+    [self contentSucess:content :alert];
+    [self contentFail:content];
+}
+
+
+-(void)contentSucess :(NSString *)content :(UIAlertView *)alert{
+    if ([content isEqualToString:@"sucess"]) {
         [alert show];
-        m_textfiledInput.text=Nil;
-        flag=0;
-        [self randomTrue];
-            NSLog(@"%@",self.randomtrueArray);
-    }    NSString *resultSecond=result[1];
-
-    
-    NSString *letterA=@"A";
-    NSString *letterB=@"B";
-   NSString *halfLeft=[resultFirst stringByAppendingString:letterA];
-   NSString *halfRight=[resultSecond stringByAppendingString:letterB];
-    NSString *prompt=[halfLeft stringByAppendingString:halfRight];
-    
-    m_labelInfo.text=prompt;
-    flag++;
-    if(flag==6){
-    m_labelInfo.text=@"游戏失败！！";
-    m_textfiledInput.text=Nil;
+        m_labelInfo.text=content;
+        [self random];
+        m_textfiledInput.text=nil;
     }
-    if (flag>6) {
-        exit(0);
+
+}
+
+
+-(void)contentFail :(NSString *)content{
+    if ([content isEqualToString:@"fail"])
+    {
+        m_labelInfo.text=@"游戏失败";
+        m_textfiledInput.text=nil;
+        [self random];
     }
 }
 
--(NSMutableArray *)judge :(NSMutableArray *)nsarray{
-    int correct=0;
-    int contain=0;
-    int all=0;
-        //AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
-    
-    NSMutableArray *systemnumbers=self.randomtrueArray;
 
-    
-    for (int i=0; i<systemnumbers.count; i++) {
-        if([systemnumbers[i] isEqualToString:nsarray[i]]){
-            correct++;
-        }
-    }
-    for (int i=0; i<nsarray.count; i++) {
-        for (int j=0;j<systemnumbers.count;j++) {
-            if ([nsarray[i] isEqualToString:systemnumbers[j]] ) {
-                all++;
-                contain=all-correct;
-            }
-        }
-    }
-    NSString *strcorrect=[NSString stringWithFormat:@"%d",correct];
-    NSString *strcontain=[NSString stringWithFormat:@"%d",contain];
-    NSMutableArray *result=[[NSMutableArray alloc]initWithObjects:strcorrect,strcontain,nil];
-    
-    
-    return result;
-}
 
+////////////////////////
 - (UITextField *)createLabelts :(CGRect)frame  :(UIColor *)labelColor
 {
     
@@ -126,17 +97,6 @@ int flag=0;
     return YES;
 }
 
--(void)randomTrue{
-   self.randomtrueArray=[[NSMutableArray alloc]init];
-    do{
-        int random=arc4random()%10;
-        NSString *randomString=[NSString stringWithFormat:@"%d",random];
-        if (![self.randomtrueArray containsObject:randomString]) {
-            [self.randomtrueArray addObject:randomString];
-        }
-        
-    }while (self.randomtrueArray.count!=4);
-}
 
 -(bool)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
     
@@ -147,12 +107,14 @@ int flag=0;
     NSString *toString=[textField.text stringByReplacingCharactersInRange:range withString:string];
     if (m_textfiledInput==textField) {
         if([toString length]>4){
-            textField.text=[toString substringToIndex:4];
+           textField.text=[toString substringToIndex:4];
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"填写的数字不能超过4位" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
             [alert show];
             return NO;
         }
-    }
+        
+        }
+
     return YES;
 }
 

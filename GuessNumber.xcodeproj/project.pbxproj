@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D90F0451A15A4DE001EEB99 /* TestTimes.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D90F0441A15A4DE001EEB99 /* TestTimes.m */; };
 		0D9746991A09F85E0006C79F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9746981A09F85E0006C79F /* main.m */; };
 		0D97469C1A09F85E0006C79F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D97469B1A09F85E0006C79F /* AppDelegate.m */; };
 		0D97469F1A09F85E0006C79F /* IndexController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D97469E1A09F85E0006C79F /* IndexController.m */; };
@@ -16,12 +17,9 @@
 		0D9746B31A09F85F0006C79F /* GuessNumberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9746B21A09F85F0006C79F /* GuessNumberTests.m */; };
 		0D9746C11A09FB0E0006C79F /* TestRandomNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9746C01A09FB0E0006C79F /* TestRandomNumber.m */; };
 		0D9746C41A09FBE60006C79F /* RandomNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9746C31A09FBE60006C79F /* RandomNumber.m */; };
-		0D9746C71A0A00350006C79F /* AnyNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9746C61A0A00350006C79F /* AnyNumber.m */; };
-		0D9746C91A0A0DCD0006C79F /* TestAnyNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9746C81A0A0DCD0006C79F /* TestAnyNumber.m */; };
-		0D9746CC1A0A196B0006C79F /* Judge.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9746CB1A0A196B0006C79F /* Judge.m */; };
-		0D9770481A0B16B800278A0B /* TestJudge.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9770471A0B16B800278A0B /* TestJudge.m */; };
-		0D97C39F1A0C6D05007DB92A /* Cycling.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D97C39E1A0C6D05007DB92A /* Cycling.m */; };
-		0D97C3A11A0C8D84007DB92A /* TestCycling.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D97C3A01A0C8D84007DB92A /* TestCycling.m */; };
+		0D9746CC1A0A196B0006C79F /* ResultCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9746CB1A0A196B0006C79F /* ResultCheck.m */; };
+		0D9770481A0B16B800278A0B /* TestResultCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9770471A0B16B800278A0B /* TestResultCheck.m */; };
+		0D9906591A14A2D800184577 /* ChanceTimes.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9906581A14A2D800184577 /* ChanceTimes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D90F0441A15A4DE001EEB99 /* TestTimes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTimes.m; sourceTree = "<group>"; };
 		0D9746931A09F85E0006C79F /* GuessNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D9746971A09F85E0006C79F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D9746981A09F85E0006C79F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -51,15 +50,11 @@
 		0D9746C01A09FB0E0006C79F /* TestRandomNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRandomNumber.m; sourceTree = "<group>"; };
 		0D9746C21A09FBE60006C79F /* RandomNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RandomNumber.h; path = GuessNumber/RandomNumber.h; sourceTree = "<group>"; };
 		0D9746C31A09FBE60006C79F /* RandomNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RandomNumber.m; path = GuessNumber/RandomNumber.m; sourceTree = "<group>"; };
-		0D9746C51A0A00350006C79F /* AnyNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnyNumber.h; path = GuessNumber/AnyNumber.h; sourceTree = "<group>"; };
-		0D9746C61A0A00350006C79F /* AnyNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnyNumber.m; path = GuessNumber/AnyNumber.m; sourceTree = "<group>"; };
-		0D9746C81A0A0DCD0006C79F /* TestAnyNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAnyNumber.m; sourceTree = "<group>"; };
-		0D9746CA1A0A196B0006C79F /* Judge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Judge.h; path = GuessNumber/Judge.h; sourceTree = "<group>"; };
-		0D9746CB1A0A196B0006C79F /* Judge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Judge.m; path = GuessNumber/Judge.m; sourceTree = "<group>"; };
-		0D9770471A0B16B800278A0B /* TestJudge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestJudge.m; sourceTree = "<group>"; };
-		0D97C39D1A0C6D05007DB92A /* Cycling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cycling.h; path = GuessNumber/Cycling.h; sourceTree = "<group>"; };
-		0D97C39E1A0C6D05007DB92A /* Cycling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cycling.m; path = GuessNumber/Cycling.m; sourceTree = "<group>"; };
-		0D97C3A01A0C8D84007DB92A /* TestCycling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCycling.m; sourceTree = "<group>"; };
+		0D9746CA1A0A196B0006C79F /* ResultCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResultCheck.h; path = GuessNumber/ResultCheck.h; sourceTree = "<group>"; };
+		0D9746CB1A0A196B0006C79F /* ResultCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResultCheck.m; path = GuessNumber/ResultCheck.m; sourceTree = "<group>"; };
+		0D9770471A0B16B800278A0B /* TestResultCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestResultCheck.m; sourceTree = "<group>"; };
+		0D9906571A14A2D800184577 /* ChanceTimes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChanceTimes.h; sourceTree = "<group>"; };
+		0D9906581A14A2D800184577 /* ChanceTimes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChanceTimes.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				0D97C3A21A0C98DC007DB92A /* ClassTest */,
-				0D97C3A01A0C8D84007DB92A /* TestCycling.m */,
-				0D9770471A0B16B800278A0B /* TestJudge.m */,
-				0D9746C81A0A0DCD0006C79F /* TestAnyNumber.m */,
-				0D9746C01A09FB0E0006C79F /* TestRandomNumber.m */,
 				0D9746951A09F85E0006C79F /* GuessNumber */,
 				0D9746AF1A09F85F0006C79F /* GuessNumberTests */,
 				0D9746941A09F85E0006C79F /* Products */,
@@ -147,14 +138,15 @@
 		0D97C3A21A0C98DC007DB92A /* ClassTest */ = {
 			isa = PBXGroup;
 			children = (
-				0D9746C51A0A00350006C79F /* AnyNumber.h */,
-				0D9746C61A0A00350006C79F /* AnyNumber.m */,
-				0D9746CA1A0A196B0006C79F /* Judge.h */,
-				0D9746CB1A0A196B0006C79F /* Judge.m */,
+				0D9770471A0B16B800278A0B /* TestResultCheck.m */,
+				0D9746C01A09FB0E0006C79F /* TestRandomNumber.m */,
+				0D90F0441A15A4DE001EEB99 /* TestTimes.m */,
+				0D9746CA1A0A196B0006C79F /* ResultCheck.h */,
+				0D9746CB1A0A196B0006C79F /* ResultCheck.m */,
 				0D9746C21A09FBE60006C79F /* RandomNumber.h */,
 				0D9746C31A09FBE60006C79F /* RandomNumber.m */,
-				0D97C39D1A0C6D05007DB92A /* Cycling.h */,
-				0D97C39E1A0C6D05007DB92A /* Cycling.m */,
+				0D9906571A14A2D800184577 /* ChanceTimes.h */,
+				0D9906581A14A2D800184577 /* ChanceTimes.m */,
 			);
 			name = ClassTest;
 			sourceTree = "<group>";
@@ -259,13 +251,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D9746C71A0A00350006C79F /* AnyNumber.m in Sources */,
 				0D97469F1A09F85E0006C79F /* IndexController.m in Sources */,
 				0D97469C1A09F85E0006C79F /* AppDelegate.m in Sources */,
-				0D9746CC1A0A196B0006C79F /* Judge.m in Sources */,
+				0D9746CC1A0A196B0006C79F /* ResultCheck.m in Sources */,
 				0D9746991A09F85E0006C79F /* main.m in Sources */,
 				0D9746C41A09FBE60006C79F /* RandomNumber.m in Sources */,
-				0D97C39F1A0C6D05007DB92A /* Cycling.m in Sources */,
+				0D9906591A14A2D800184577 /* ChanceTimes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,10 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D97C3A11A0C8D84007DB92A /* TestCycling.m in Sources */,
 				0D9746B31A09F85F0006C79F /* GuessNumberTests.m in Sources */,
-				0D9770481A0B16B800278A0B /* TestJudge.m in Sources */,
-				0D9746C91A0A0DCD0006C79F /* TestAnyNumber.m in Sources */,
+				0D9770481A0B16B800278A0B /* TestResultCheck.m in Sources */,
+				0D90F0451A15A4DE001EEB99 /* TestTimes.m in Sources */,
 				0D9746C11A09FB0E0006C79F /* TestRandomNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,19 +1,19 @@
 //
-//  JudgeTest.m
+//  TestTimes.m
 //  GuessNumber
 //
-//  Created by cyd on 14-11-6.
+//  Created by cyd on 14-11-14.
 //  Copyright (c) 2014年 cyd. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-#import "Judge.h"
-@interface TestJudge : XCTestCase
--(void)test_judge;
+#import "ChanceTimes.h"
+@interface TestTimes : XCTestCase
+
 @end
 
-@implementation TestJudge
+@implementation TestTimes
 
 - (void)setUp {
     [super setUp];
@@ -36,12 +36,25 @@
         // Put the code you want to measure the time of here.
     }];
 }
-- (void)test_judge{
-    NSMutableArray *ceshi=[[NSMutableArray alloc]initWithObjects:@"1",@"3",@"8",@"6",nil];
-    Judge *judge=[[Judge alloc]init];
-    NSMutableArray *result=[judge panduan:ceshi];
-    NSMutableArray *example=[[NSMutableArray alloc]initWithObjects:@"2",@"2", nil];
-    NSLog(@"%@--－!!－－－!!!－－－!!－－－",result);
-    XCTAssertEqualObjects(result,example);
+
+-(void)test_4A0B_6times_exam{
+    ChanceTimes *chancetimes=[[ChanceTimes alloc]init];
+   NSString *result=[chancetimes resultBytimes:@"4A0B" :6];
+    XCTAssertEqualObjects(result, @"sucess");
 }
+
+-(void)test_0A4B_6times_exam{
+    ChanceTimes *chancetimes=[[ChanceTimes alloc]init];
+    NSString *result=[chancetimes resultBytimes:@"0A4B" :6];
+    XCTAssertEqualObjects(result, @"fail");
+}
+
+-(void)test_0A3B_6times_exam{
+    ChanceTimes *chancetimes=[[ChanceTimes alloc]init];
+    NSString *result=[chancetimes resultBytimes:@"0A3B" :5];
+    XCTAssertEqualObjects(result, @"0A3B");
+}
+
+
+
 @end

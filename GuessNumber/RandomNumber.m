@@ -9,8 +9,20 @@
 #import "RandomNumber.h"
 
 @implementation RandomNumber
-- (int)add_A_B :(int)aNumber :(int)bNumber
-{
-    return aNumber + bNumber;
+
+-(NSMutableArray *)creatRandom{
+    randomGenerate=[[NSMutableArray alloc]init];
+    do{
+        int random=arc4random()%10;
+        NSString *randomString=[NSString stringWithFormat:@"%d",random];
+        if (![randomGenerate containsObject:randomString]) {
+            [randomGenerate addObject:randomString];
+        }
+        
+    }while (randomGenerate.count!=4);
+    return randomGenerate;
 }
+
+
+
 @end

@@ -18,6 +18,7 @@
 @implementation TestAnyNumber
 
 - (void)setUp {
+    
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
@@ -38,7 +39,6 @@
         // Put the code you want to measure the time of here.
     }];
 }
-
 - (void)test_any_number{
     AnyNumber *anynumber=[[AnyNumber alloc]init];
     BOOL flag=true;
